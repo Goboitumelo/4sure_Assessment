@@ -16,7 +16,7 @@ import androidx.annotation.Nullable;
 public class Resource<T> {
 
     @NonNull
-    public final com.example.weatherassessment4sure.model.Status status;
+    public final Status status;
 
     @Nullable
     public final String message;
@@ -24,7 +24,7 @@ public class Resource<T> {
     @Nullable
     public final T data;
 
-    public Resource(@NonNull com.example.weatherassessment4sure.model.Status status, @Nullable T data, @Nullable String message) {
+    public Resource(@NonNull Status status, @Nullable T data, @Nullable String message) {
         this.status = status;
         this.data = data;
         this.message = message;

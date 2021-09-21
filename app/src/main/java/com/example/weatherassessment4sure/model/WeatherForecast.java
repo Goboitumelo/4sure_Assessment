@@ -21,7 +21,7 @@ public class WeatherForecast {
     private Integer cnt;
     @SerializedName("list")
     @Expose
-    private List<com.example.weatherassessment4sure.model.DailyForecast> dailyForecasts = null;
+    private List<DailyForecast> dailyForecasts = null;
 
     public City getCity() {
         return city;
@@ -55,11 +55,11 @@ public class WeatherForecast {
         this.cnt = cnt;
     }
 
-    public List<com.example.weatherassessment4sure.model.DailyForecast> getDailyForecasts() {
+    public List<DailyForecast> getDailyForecasts() {
         return dailyForecasts;
     }
 
-    public void setDailyForecasts(List<com.example.weatherassessment4sure.model.DailyForecast> dailyForecasts) {
+    public void setDailyForecasts(List<DailyForecast> dailyForecasts) {
         this.dailyForecasts = dailyForecasts;
     }
 }

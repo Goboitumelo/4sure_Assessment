@@ -12,6 +12,11 @@ android {
     compileSdkVersion build_versions.target_sdk
     buildToolsVersion build_versions.build_tools
 
+    buildFeatures {
+
+        dataBinding true
+    }
+
     defaultConfig {
         applicationId "com.example.weatherassessment4sure"
         minSdkVersion build_versions.min_sdk
@@ -32,9 +37,6 @@ android {
         it.buildConfigField 'String', 'WEATHER_API_KEY', WeatherApiKey
     }
 
-    dataBinding {
-        enabled = true
-    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
